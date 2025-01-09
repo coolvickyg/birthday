@@ -53,10 +53,10 @@ const Home = () => {
           <div className="candle"></div>
         </div>
       </div>
-      <button className="button">
-        <Link to="/greeting-card">Big surprise is waiting for you !! Click Here !! </Link>
+      <button className="button" onClick={() => navigate('/greeting-card')}>
+        Big surprise is waiting for you !! Click Here !!
       </button>
-
+      
       {/* Audio Player (Auto-play on page load) */}
       <audio ref={audioRef} autoPlay loop>
         <source src={hbdSong} type="audio/mp3" />
