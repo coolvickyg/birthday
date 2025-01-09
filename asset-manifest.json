@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/coolvickyg/birthday.git/static/css/main.f501945d.css",
+    "main.js": "/coolvickyg/birthday.git/static/js/main.72655266.js",
+    "static/js/488.7982da6e.chunk.js": "/coolvickyg/birthday.git/static/js/488.7982da6e.chunk.js",
+    "static/media/fierce.jpg": "/coolvickyg/birthday.git/static/media/fierce.1d036300de2aa954df52.jpg",
+    "static/media/trip.jpg": "/coolvickyg/birthday.git/static/media/trip.4f6d75ca71de7825ddde.jpg",
+    "static/media/glamour.jpg": "/coolvickyg/birthday.git/static/media/glamour.4e5baa1e347774ee39bd.jpg",
+    "static/media/dinner.jpg": "/coolvickyg/birthday.git/static/media/dinner.c9bbefcb02e189b48677.jpg",
+    "static/media/happy_birthday_instr.mp3": "/coolvickyg/birthday.git/static/media/happy_birthday_instr.d0272c3dad28f07a392c.mp3",
+    "static/media/bd.jpg": "/coolvickyg/birthday.git/static/media/bd.adec5a5e08862f572020.jpg",
+    "static/media/loving.jpg": "/coolvickyg/birthday.git/static/media/loving.0b36c21e2dd7b0d25932.jpg",
+    "static/media/cutie.jpg": "/coolvickyg/birthday.git/static/media/cutie.bf798edb98648433a6d3.jpg",
+    "static/media/charm.jpg": "/coolvickyg/birthday.git/static/media/charm.574bf0e3da15c425aa2f.jpg",
+    "index.html": "/coolvickyg/birthday.git/index.html",
+    "main.f501945d.css.map": "/coolvickyg/birthday.git/static/css/main.f501945d.css.map",
+    "main.72655266.js.map": "/coolvickyg/birthday.git/static/js/main.72655266.js.map",
+    "488.7982da6e.chunk.js.map": "/coolvickyg/birthday.git/static/js/488.7982da6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f501945d.css",
+    "static/js/main.72655266.js"
+  ]
+}
