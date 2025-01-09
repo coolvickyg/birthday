@@ -10,7 +10,7 @@ import Login from './Login'; // Import the Login component
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn") === "true");
   return (
-    <Router>
+    <Router basename="/birthday">
       <div className="App">
         <Routes>
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
