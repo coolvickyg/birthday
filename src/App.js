@@ -6,9 +6,14 @@ import FinalSurprise from './components/FinalSurprise';
 import Confetti from 'react-confetti'; // Import the confetti component
 import hbdSong from './music/happy_birthday_instr.mp3'; // Ensure the path is correct
 import Login from './Login'; // Import the Login component
+import { Link } from 'react-router-dom';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn") === "true");
+  useEffect(() => {
+    // Store the login state in localStorage so it's preserved across sessions
+    localStorage.setItem("isLoggedIn", isLoggedIn ? "true" : "false");
+  }, [isLoggedIn]);
   return (
     <Router>
       <div className="App">
@@ -48,8 +53,8 @@ const Home = () => {
           <div className="candle"></div>
         </div>
       </div>
-      <button className="button" onClick={() => window.location.href = '/greeting-card'}>
-        Big surprise is waiting for you !! Click Here !!
+      <button className="button">
+        <Link to="/greeting-card">Big surprise is waiting for you !! Click Here !! </Link>
       </button>
 
       {/* Audio Player (Auto-play on page load) */}
