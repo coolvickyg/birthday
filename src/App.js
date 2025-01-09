@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate, useNavigate  } from 'react-router-dom';
 import './App.css';
 import GreetingCard from './components/GreetingCard';
 import FinalSurprise from './components/FinalSurprise';
@@ -29,6 +29,7 @@ const App = () => {
 };
 
 const Home = () => {
+  const navigate = useNavigate();
   const audioRef = useRef(null);
 
   // Auto-play the audio when the component is mounted
