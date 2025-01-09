@@ -1,0 +1,84 @@
+.surprise-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #f8d0d8 50%, #f4a8c5 50%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.message {
+  text-align: center;
+  color: #333;
+}
+
+.final-image-box {
+  width: 35%; /* Less than half of the screen */
+  height: 35%; /* Maintain a square ratio */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.final-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #866363; /* Soft brownish pink color */
+  font-family: cursive;
+  text-shadow: 0 0 8px #f3c1d4, 0 0 16px #f3c1d4, 0 0 24px #f3c1d4, 0 0 32px #f3c1d4; /* Soft, cute pink glow */
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  background-color: #ff6fa1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e03772;
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 768px) {
+  .message h1 {
+    font-size: 2.5em;
+  }
+
+  .message p {
+    font-size: 1.2em;
+  }
+
+  .back-button {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .message h1 {
+    font-size: 2em;
+  }
+
+  .message p {
+    font-size: 1em;
+  }
+}

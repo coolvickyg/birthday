@@ -1,0 +1,135 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  height: auto; /* Allow scrolling if content overflows */
+  background: linear-gradient(to right, #f8d0d8 50%, #f4a8c5 50%); /* Gradient background like Final Surprise */
+}
+
+/* Center the greeting card grid */
+.greeting-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center; /* Centers the cards horizontally */
+  align-items: center;   /* Centers the cards vertically */
+  margin: 0 auto;        /* Center the grid container */
+}
+
+/* Milestone Cards */
+.milestone {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  height: 250px;
+  background-color: #ff6fa1;
+  color: white;
+  text-align: center;
+  font-family: 'Dancing Script', cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the cards */
+}
+
+.milestone:hover {
+  transform: translateY(-8px); /* Slight lift */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  filter: brightness(1.05); /* Slight brightness increase */
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 700px;
+  background-color: #f8d0d8; /* Soft light pink background */
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 60vh; /* Ensure the image fits within 60% of the viewport height */
+  object-fit: contain; /* Ensure the image is contained within the box */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  background-color: #ff6fa1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e03772;
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 1200px) {
+  .greeting-card-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .greeting-card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+  }
+
+  .milestone {
+    max-width: 150px;
+    height: 200px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting-card-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+
+  .milestone {
+    width: 80%;
+    height: 180px;
+    font-size: 1.2em;
+  }
+
+  .modal {
+    width: 90%;
+  }
+}
