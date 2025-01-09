@@ -40,7 +40,7 @@ const Home = () => {
       {/* Confetti Effect */}
       <Confetti width={window.innerWidth} height={window.innerHeight} />
 
-      <div className="happy-birthday">Happiest Birthday Bebuuu ❤!</div>
+      <div className="happy-birthday">Happiest Birthday Bebuuu! ❤</div>
       <div className="cake-container">
         <div className="cake">
           <div className="candle"></div>
